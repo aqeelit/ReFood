@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import Header from "./components/Layout/Header";
+import Meals from "./components/Meals/Meals";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Refood for food orders.
-        </p>
-      </header>
-    </div>
+    <Fragment>
+      <Header/>
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 
