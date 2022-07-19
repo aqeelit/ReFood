@@ -32,7 +32,10 @@ const DomeData = [
 
 const AvailableMeals = () => {
   const mealsList = DomeData.map((meal) => (
-    <MealItem key={meal.id} name={meal.name} 
+    <MealItem 
+    key={meal.id} 
+    id={meal.id}
+    name={meal.name} 
     description={meal.description}
     price={meal.price} />
   ));

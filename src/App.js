@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
-import Cartprovider from "./context/ContextProvider";
+import Cartprovider from "./components/context/CartProvider";
 import "./App.css";
 
 function App() {

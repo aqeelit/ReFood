@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import CartContext from "../../context/CartContext";
+import CartContext from "../context/cart-context";
 import CartIcon from '../Cart/CartIcon';
 import classes from "./HeaderCartButton.module.css";
 
@@ -10,6 +10,7 @@ const HeaderCartButton = props => {
     const numberOfCart = cartCTX.items.reduce((CuNumber,item) => {
         return CuNumber + item.amount;
     },0);
+
 
     return(
         <button className={classes.button} onClick={props.onClick}>
