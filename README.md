@@ -1,4 +1,4 @@
-# Food Order is React App
+# Food Order in React js
 
 to install project go to the directory, you can run:
 
